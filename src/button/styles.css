@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+.default {
+    box-shadow: 0 5px 5px -1px rgba(0, 0, 0, 0.15);
+
+    color: #333333;
+}
+
+.outline {
+    border: 2px solid;
+}
+
+
+.buttonIcon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttonIcon > span {
+    padding-top: 2px;
+    font-size: inherit;
+}
+
+.default,
+.outline,
+.text {
+    padding: 0.8rem 1.6rem;
+
+    border-radius: 0.5rem;
+
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.default,
+.text {
+    border: none;
+}
+
+.outline,
+.text {
+    background: none;
+    
+    color: #333333;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+
+/* Colors */ 
+
+.default.no-color {
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+.default.primary,
+.default.secundary,
+.default.danger {
+    color: #FFFFFF;
+}
+
+.default.primary {
+    background-color: #2962FF;
+}
+
+.outline.primary,
+.text.primary {
+    color: #2962FF;
+}
+
+.outline.secundary,
+.text.secundary {
+    color: #1C313A;
+}
+
+.default.secundary {
+    background-color: #455a64;
+}
+
+.default.danger {
+    background-color: #d32f2f;
+}
+
+
+/* Colors HOVER */
+
+.default.no-color:is(:focus, :hover) {
+    background-color: #aeaeae;
+}
+
+.default.primary:is(:focus, :hover) {
+    background-color: #0039CB;
+}
+
+.default.secundary:is(:focus, :hover) {
+    background-color: #1C313A;
+}
+
+.default.danger:is(:focus, :hover) {
+    background-color: #9A0007;
+}
+
+.outline.no-color:is(:focus, :hover),
+.text.no-color:is(:focus, :hover) {
+    background-color: #e9e9e9;
+}
+
+.outline.primary:is(:focus, :hover),
+.text.primary:is(:focus, :hover) {
+    background-color: #eaf0ff;
+}
+
+.outline.secundary:is(:focus, :hover),
+.text.secundary:is(:focus, :hover) {
+    background-color: rgb(210, 232, 241);
+}
+
+/* Colors disable */
+.default:disabled,
+.outline:disabled,
+.text:disabled {
+    box-shadow: none;
+    color: #AAAAAA;
+    pointer-events: none;
+}
+
+
+/* Size */
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 1.6rem;
+}
+
+.lg {
+    font-size: 2.4rem;
+}
+
+.xl {
+    font-size: 3.6rem;
+}
